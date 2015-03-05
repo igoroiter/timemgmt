@@ -1,28 +1,24 @@
 {
   "name": "timeMgmt",
   "version": "0.0.0",
+  "homepage": "https://github.com/igoroiter/timemgmt",
   "authors": [
     "Igor Roiter <igor.roiter@gmail.com>"
   ],
-  "main": "./bin/www",
-  "moduleType": [
-    "node"
-  ],
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "public/bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
-    "angular-ui-router": "~0.2.13",
-    "bootstrap": "~3.3.2",
-    "satellizer": "~0.9.2",
-    "animate.css": "~3.2.0",
     "angular-animate": "~1.3.13",
-    "angular": "~1.3.13"
+    "angular-ui-router": "~0.2.13",
+    "animate.css": "~3.2.0",
+    "bootstrap": "~3.3.2",
+    "satellizer": "~0.9.2"
   }
 }
