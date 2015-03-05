@@ -7,7 +7,6 @@ var jwt = require('jwt-simple');
 var mongoose = require('mongoose');
 var authRouter = require('./routes/auth');
 var serverConfig = require('./serverConfig');
-console.log(require('os').hostname());
 
 var app = express();
 
