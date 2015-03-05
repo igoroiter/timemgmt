@@ -1,0 +1,1 @@
+angular.module('timeMgmt', ['ui.router', 'ngAnimate', 'satellizer']);

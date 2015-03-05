@@ -1,0 +1,12 @@
+form.form-signin(ng-submit="submit()", name="register", novalidate="")
+    h1.form-signin-heading.text-muted Login
+    input.form-control(type="email", name="email", ng-model="email", placeholder="Email address", required="")
+    p.help-block(ng-show="register.email.$dirty && register.email.$invalid") Please enter a proper email.
+    input.form-control(type="password", name="password", ng-model="password", placeholder="Password", required="")
+    button.btn.btn-lg.btn-primary.btn-block(ng-disabled="register.$invalid", type="submit") Login
+    br
+    a.text-muted.pull-right(ui-sref="register") Create account
+    br
+    button.btn.btn-lg.btn-default.btn-block(ng-click="authenticate('google')", type="button") Google
+        button.btn.btn-lg.btn-default.btn-block(ng-click="authenticate('linkedin')", type="button") LinkedIn
+

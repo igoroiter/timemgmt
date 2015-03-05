@@ -1,0 +1,10 @@
+form.form-signin(ng-submit="submit()", name="register", novalidate)
+    h1.form-signin-heading.text-muted Register
+    input.form-control(type="email", name="email", ng-model="email", placeholder="Email address", required)
+    p.help-block(ng-show="register.email.$dirty && register.email.$invalid") Please enter a proper email.
+    input.form-control(type="password", name="password", ng-model="password", placeholder="Password", required)
+    input.form-control(type="password", name="password_confirm", ng-model="password_confirm", placeholder="Confirm Password", validate-equals="password")
+    p.help-block(ng-show="register.password_confirm.$dirty && register.password_confirm.$invalid") please match the passwords.
+    button.btn.btn-lg.btn-primary.btn-block(ng-disabled="register.$invalid", type="submit") Submit
+    br
+    a.text-muted.pull-right(ui-sref="login") Back to Login screen

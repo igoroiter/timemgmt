@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    div(ng-include="'/partials/header'")
+    .container(ng-cloak)
+        .ui-view-container
+            div.col-md-8(ui-view)
+            p.text-primary.text-center.div.col-md-4.glyphicon.glyphicon-calendar Igor Ha Meleh
+            div(ng-include="'/partials/alert'")

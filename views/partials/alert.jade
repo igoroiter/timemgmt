@@ -1,0 +1,4 @@
+div(class="alert alert-{{alert.type}} animated main-alert" ng-class="{'flipInY': alert.show, 'flipOutY': !alert.show, 'alert_hidden': !alert.hasBeenShown}")
+    strong {{alert.title}}
+    br
+    | {{alert.message}}
