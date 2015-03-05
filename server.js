@@ -7,7 +7,6 @@ var jwt = require('jwt-simple');
 var mongoose = require('mongoose');
 var authRouter = require('./routes/auth');
 var serverConfig = require('./serverConfig');
-var os = require('os');
 
 var app = express();
 
@@ -55,8 +54,6 @@ app.get('*', function(req, res) {
 });
 
 mongoose.connect(serverConfig.MongoConnString);
-
-console.log(os.hostname());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

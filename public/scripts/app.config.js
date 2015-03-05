@@ -40,7 +40,7 @@ angular.module('timeMgmt').config(function($stateProvider, $urlRouterProvider, $
         url: API_URL + 'auth/linkedin'
     });
 })
-.constant('API_URL', 'http://localhost:3000/')
+.constant('API_URL', 'https://murmuring-bayou-1234.herokuapp.com/')
 .run(function($window) {
     var params = $window.location.search.substring(1);
 
